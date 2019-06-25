@@ -16,7 +16,7 @@ Nonetheless, in Simulink, no specific package is used. Hence, a basic license is
 ### How to use
 Here explanations regarding how to the two tool are provided
 
-### Reliability
+### Obtain Reliability
   
 In order to evaluate the reliability of the CHB and the IGBT inverter, the user is referred to the Reliability folder, and follow the steps below:
 
