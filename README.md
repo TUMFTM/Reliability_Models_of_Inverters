@@ -1,8 +1,8 @@
-# Efficiency and Reliability of Inverters
+# Reliability of Inverters
   
 This project aims to model the efficiency and the reliability of inverters.  
 
-In terms of reliability, only the inverter in BMW i3 and the CHB are modelled. The metric for reliability is the expected mileage until break down. The SiC MOSFET inverter is not modelled, due to the lack of reliability data for these new switches. This model is not published in any paper yet, but the comments should be sufficient to explain the sources and the deriviation of the model.
+In terms of reliability, only the IGBT inverter in BMW i3 and the Cascaded H-bridge inverter are modelled. The metric for reliability is the expected mileage until break down. The SiC MOSFET inverter is not modelled, due to the lack of reliability data for these new switches. This model is not published in any paper yet, but the comments should be sufficient to explain the sources and the deriviation of the model.
 
 However, these models are specific to the switches and inverters. The author cannot guaranty the validy and the accuracy of the model still hold, when trying to extra-polate or reshape the map.
 
@@ -25,6 +25,7 @@ Open the Reliability folder in the downloaded repository
 
 #### Step2: 
 Open the file Main_Rainflow_Reliability.m in MATLAB
+
 #### Step3: 
 Select the driving cycle to simulate, by copying the commented option in line 8, and set this value to Driving_Cycle_Name 
 
