@@ -10,8 +10,7 @@ However, these models are specific to the switches and inverters. The author can
 As long as MATLAB is installed, downloading the model is sufficient for the usage.
   
 ### Prerequisites
-As the models are programmed in MATLAB 2017b\Simulink 2017b, necessary licenses are required
-Nonetheless, in Simulink, no specific package is used. Hence, a basic license is sufficient. 
+As the models are programmed in MATLAB 2017b, necessary licenses of MATLAB are required. There is no more dependencies other than that.
   
 ### How to use
 Here explanations regarding how to the two tool are provided
