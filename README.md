@@ -37,6 +37,9 @@ Run the file, and the results will be display in the console of MATLAB
 
 #### Additional Information:
 Additionally, necessary models are put in folder Reliability/functions. The paper based on which the model is built is put in the comment as well for the interested users. For the reliability of the CHB inverter. The assumptions regarding the Rth_PCB_Junction should be reconsidered carefully. Right now, this value is assumed differently in different driving cycles, due to different transient characteristics of the junction temperature in different driving cycles. The the assumptions are rather pessimistic, in order to demonstrate the worst case for the CHB. The reliability model is not verified, as it is impossible to verify the reliability with limited time and cost.
+
+Data folder contains the temperature curves and electric stress curves of the switches
+Function folder contains the reliability models of different components. The sources of these models are stated in the comments for the user to check
   
 
 ## Deployment
