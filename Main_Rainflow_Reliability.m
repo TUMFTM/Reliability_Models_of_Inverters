@@ -1,3 +1,5 @@
+%run this file to directly obtain results
+
 %initialization
 clc;
 clear;
