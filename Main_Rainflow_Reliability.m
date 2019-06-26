@@ -193,7 +193,7 @@ else% the inverter type is IGBT
     Damage_capacitor = 1/Gallay_Capacitor_Model(Ic_rms, duration);
 end
 
-%%% questionable part
+%%
 Damage_switch           = sum(Count./Nfswitch)*junction_num; 
 Damage_bond             = sum(1./NfBond)*junction_num*joints_per_switch;
 Damage_solder_board     = 1./Board_Reliability(board_param, duration, board_temp_series);
@@ -202,6 +202,9 @@ Pie = Pie./sum(Pie);
 %PCB solder reliability model is explained in the function
 
 switch Driving_Cycle_Name
+    % here all the constant values (12.07 etc.) refer to the range of the corresponding driving cycle
+    % as the initial result is the cycle life, multiplying cycle life with the driving cycle range 
+    % will result in a mileage life
     case 'FTP72'
         Range_to_Death = 12.07/(Damage_switch + Damage_bond + Damage_solder_board + Damage_capacitor);
     case 'NEDC'
